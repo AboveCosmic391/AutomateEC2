@@ -1,0 +1,8 @@
+
+#!/bin/bash
+sudo su
+apt update -y
+apt install -y apache2
+systemctl start apache2
+systemctl enable apache2
+echo "<div style='display: flex; justify-content: center; align-items: center; height: 100vh;'><h1 style='font-size: 48px; color: blue;'>Hello World from Shriver Job Corps</h1></div>" > /var/www/html/index.html
